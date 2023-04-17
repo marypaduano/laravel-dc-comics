@@ -2,6 +2,12 @@
 
 @section('content')
 
+<div class="container py-4">
+  <button>
+    <a href="{{ route('home') }}">Home Page</a>
+  </button>
+</div>
+
 <div>
   <div class="container">
     <table class="table">
