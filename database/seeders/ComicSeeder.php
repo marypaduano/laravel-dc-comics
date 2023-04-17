@@ -124,8 +124,7 @@ class ComicSeeder extends Seeder
               "sale_date" => "2019-04-10",
               "type" => "graphic novel"
             ],
-          ];
-    
+          ];                        
     
           foreach ($comics as $comic) {
             $c = new Comic();
@@ -142,3 +141,4 @@ class ComicSeeder extends Seeder
         }   
     }
 }
+                    

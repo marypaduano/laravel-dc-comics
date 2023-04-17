@@ -2,19 +2,19 @@
 
 @section('content')
 
-<div>
+<!-- //link per accedere -->
 <div class="container">
-    ciao
-        <!-- <div class="row">
-            @foreach ($comics as $comic)
+    <div class="row py-5">
+        <div class="col d-flex justify-content-center">
+            <h1>DC COMICS</h1>            
+        </div>
+        <div class="col">
+            <button>
+                <a href="{{ route('comics.index') }}">Scopri le nostre comics</a>
+            </button>        
+        </div>
 
-                <div class="col-4">
-                    <img src="{{ $comic['thumb'] }}" alt="">
-                    <h3>{{ $comic['title'] }}</h3>
-                </div>
-
-            @endforeach
-        </div> -->
+    </div>
 </div>
 
 @endsection
