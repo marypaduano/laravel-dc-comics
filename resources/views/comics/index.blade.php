@@ -37,6 +37,9 @@
             <td>
               <a class="btn btn-primary btn-sm" href="{{ route('comics.create') }}">CREA</a>
             </td>
+            <td>
+              <!-- <a class="btn btn-primary btn-sm" href="#">EDIT</a> -->
+            </td>
           </tr>
               
         @endforeach 
