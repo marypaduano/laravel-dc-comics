@@ -29,7 +29,7 @@
             </td>
             
             <td>
-              <a class="btn btn-primary btn-sm" href="#">CREA</a>
+              <a class="btn btn-primary btn-sm" href="{{ route('comics.create') }}">CREA</a>
             </td>
           </tr>
               
