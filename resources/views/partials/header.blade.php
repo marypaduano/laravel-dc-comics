@@ -26,12 +26,6 @@ header{
     background-color: lightblue;
 }
 
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 0;
-}
 ul {
     display: flex;
     .menu-item {

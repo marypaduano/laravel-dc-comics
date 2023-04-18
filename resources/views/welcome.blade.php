@@ -7,7 +7,7 @@
     <div class="row py-5">
         <div class="col">
             <button>
-                <a class="btn btn-primary btn-sm" href="{{ route('comics.index') }}">
+                <a class="btn btn-primary btn-lg" href="{{ route('comics.index') }}">
                     LOAD MORE
                 </a>
             </button>        
