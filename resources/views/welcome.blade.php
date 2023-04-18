@@ -3,17 +3,15 @@
 @section('content')
 
 <!-- //link per accedere -->
-<div class="container">
+<div class="container d-flex justify-content-center">
     <div class="row py-5">
-        <div class="col d-flex justify-content-center">
-            <h1>DC COMICS</h1>            
-        </div>
         <div class="col">
             <button>
-                <a href="{{ route('comics.index') }}">Scopri le nostre comics</a>
+                <a class="btn btn-primary btn-sm" href="{{ route('comics.index') }}">
+                    LOAD MORE
+                </a>
             </button>        
         </div>
-
     </div>
 </div>
 
