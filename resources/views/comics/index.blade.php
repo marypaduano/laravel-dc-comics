@@ -39,7 +39,7 @@
               </a>
             </td>
             <td>
-              <a class="btn btn-primary btn-sm" href="#">EDIT</a>
+              <a class="btn btn-primary btn-sm" href="{{ route('comics.edit',$comic) }}">EDIT</a>
             </td>
             <td>
               <form action="{{ route('comics.destroy',$comic) }}" method="POST">
