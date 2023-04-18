@@ -6,7 +6,9 @@
     <nav class="main-menu">
     <ul style="list-style:none;">
         <li class="menu-item">characters</li>
-        <li class="menu-item active">comics</li>
+        <li class="menu-item active">
+            <a href="{{ route('comics.index') }}">comics</a>
+        </li>
         <li class="menu-item">movies</li>
         <li class="menu-item">tv</li>
         <li class="menu-item">games</li>

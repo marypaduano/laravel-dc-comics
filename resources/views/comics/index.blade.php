@@ -2,11 +2,6 @@
 
 @section('content')
 
-<div class="container py-4">
-  <button>
-    <a href="{{ route('home') }}">Home Page</a>
-  </button>
-</div>
 <div class="container py-3 d-flex justify-content-end">
   <button>
     <a class="btn btn-primary btn-sm" href="{{ route('comics.create') }}">CREA LA TUA COMIC</a>
@@ -21,7 +16,8 @@
           <th scope="col">ID</th>
           <th scope="col">COPERTINA</th>
           <th scope="col">TITOLO</th>
-          <th scope="col"></th>
+          <th scope="col">MODIFICA</th>
+          <th scope="col">ELIMINA</th>
         </tr>
       </thead>
       <tbody>
@@ -47,8 +43,7 @@
                 @method('DELETE')
                 <input type="submit" class="btn btn-danger btn-sm" value="DELETE">
               </form>
-            </td>
-            
+            </td>            
           </tr>
               
         @endforeach 
