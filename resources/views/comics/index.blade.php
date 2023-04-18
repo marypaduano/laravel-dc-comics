@@ -41,6 +41,14 @@
             <td>
               <a class="btn btn-primary btn-sm" href="#">EDIT</a>
             </td>
+            <td>
+              <form action="{{ route('comics.destroy',$comic) }}" method="POST">
+                @csrf
+                @method('DELETE')
+                <input type="submit" class="btn btn-danger btn-sm" value="DELETE">
+              </form>
+            </td>
+            
           </tr>
               
         @endforeach 

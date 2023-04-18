@@ -46,7 +46,7 @@
         <input type="text" class="form-control" id="type" name="type">
       </div>
 
-      <button type="submit" class="btn btn-primary">Salva</button>
+      <button type="submit" class="btn btn-primary">SALVA</button>
 
 
     </form>

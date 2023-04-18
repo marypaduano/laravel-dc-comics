@@ -50,7 +50,7 @@
 
       
 
-      <button type="submit" class="btn btn-primary">CREA E SALVA</button>
+      <button type="submit" class="btn btn-primary">MODIFICA E SALVA</button>
 
 
     </form>
