@@ -3,12 +3,6 @@
 @section('content')
 
 <div class="container py-4">
-  <button>
-    <a href="{{ route('home') }}">Home Page</a>
-  </button>
-</div>
-
-<div class="container py-4">
   <h1>{{ $comic->title }}</h1>
 </div>
 
