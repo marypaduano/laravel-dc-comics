@@ -7,6 +7,11 @@
     <a href="{{ route('home') }}">Home Page</a>
   </button>
 </div>
+<div class="container py-3 d-flex justify-content-end">
+  <button>
+    <a class="btn btn-primary btn-sm" href="{{ route('comics.create') }}">CREA LA TUA COMIC</a>
+  </button>
+</div>
 
 <div>
   <div class="container">
@@ -33,12 +38,8 @@
                 <strong>{{ $comic->title }}</strong>
               </a>
             </td>
-            
             <td>
-              <a class="btn btn-primary btn-sm" href="{{ route('comics.create') }}">CREA</a>
-            </td>
-            <td>
-              <!-- <a class="btn btn-primary btn-sm" href="#">EDIT</a> -->
+              <a class="btn btn-primary btn-sm" href="#">EDIT</a>
             </td>
           </tr>
               
