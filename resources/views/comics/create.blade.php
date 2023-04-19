@@ -23,17 +23,32 @@
 
       <div class="mb-3">
         <label for="description" class="form-label">Descrizione</label>
-        <input type="text" class="form-control" id="description" name="description">
+        <input type="text" class="form-control @error('description') is-invalid @enderror" id="description" name="description" value="{{ old('description') }}">
+        @error('description')
+          <div class="invalid-feedback">
+            {{ $message }}
+          </div>
+        @enderror
       </div>
 
       <div class="mb-3">
         <label for="src" class="form-label">Immagine (url)</label>
-        <input type="text" class="form-control" id="src" name="thumb">
+        <input type="text" class="form-control @error('thumb') is-invalid @enderror" id="src" name="thumb" value="{{ old('thumb') }}">
+        @error('thumb')
+          <div class="invalid-feedback">
+            {{ $message }}
+          </div>
+        @enderror
       </div>
 
       <div class="mb-3">
         <label for="price" class="form-label">Prezzo</label>
-        <input type="number" class="form-control" id="price" name="price">
+        <input type="number" class="form-control @error('price') is-invalid @enderror" id="price" name="price" value="{{ old('price') }}">
+        @error('price')
+          <div class="invalid-feedback">
+            {{ $message }}
+          </div>
+        @enderror
       </div>
 
       <div class="mb-3">
@@ -43,18 +58,34 @@
 
       <div class="mb-3">
         <label for="sale-date" class="form-label">Data di Uscita</label>
-        <input type="text" class="form-control" id="sale-date" name="sale_date">
+        <input type="text" class="form-control form-control @error('sale_date') is-invalid @enderror" id="sale-date" name="sale_date" value="{{ old('sale_date') }}">
       </div>
 
       <div class="mb-3">
-        <label for="type" class="form-label">Tipo Comic</label>
-        <input type="text" class="form-control" id="type" name="type">
+      <label for="type" class="form-label">Tipologia</label>
+      <input type="text" class="form-control @error('type') is-invalid @enderror" id="type" name="type" value="{{ old('type') }}" >
+        @error('type')
+          <div class="invalid-feedback">
+            {{ $message }}
+          </div>
+        @enderror
       </div>
 
       <button type="submit" class="btn btn-primary">SALVA</button>
 
 
     </form>
+
+    @if ($errors->any())
+        <div class="alert alert-danger">
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
+  </div>
   </div>
     
 @endsection
